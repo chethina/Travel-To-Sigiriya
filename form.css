@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+  
+html {
+    margin: 0;
+    padding: 0;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg) no-repeat;
+    background-attachment: fixed;
+    color: black;
+    font-family: "open sans";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #ffce14;
+    background: #0f2453;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "roboto";
+    margin: 0 2rem;
+}
+header div i {
+    font-size: 2rem;
+    margin: 1rem;
+}
+header nav {
+    padding: 1rem 2rem;
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+nav li a {
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: all 250ms ease-in;
+}
+nav li a:hover {
+    background: #ffce14;
+    color: black;
+}
+.form{
+
+    width: 500px;
+    background:  rgba(0, 0, 0, 0.685);
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    color: white;
+    font-family: 'Century Gothic' ,sans-serif;
+    
+}
+.form .one{
+    padding:10px;
+    margin:10px;
+    background-color: rgb(242, 246, 0);
+    color:rgb(0, 3, 168);
+}
+.form .two{
+    padding:10px;
+    margin:10px;
+    background-color: rgb(242, 246, 0);
+    color:rgb(0, 3, 168);
+}
+button{
+    padding: 10px 15px;
+    background-color:  rgb(29, 27, 122);
+    font-size: 16px;
+    color:#fff;
+    border-color: rgb(216, 33, 33);
+    border: size 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}

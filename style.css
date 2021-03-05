@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  color: black;
+  font-family: "open sans";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: animate 100s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background: url(sigiriya01.jpg) no-repeat;
+        background-size: cover;
+    }
+    10%{
+        background: url(sigiriya02.jpg) no-repeat;
+        background-size: cover;
+    }
+    20%{
+      background: url(sigiriya03.jpg) no-repeat;
+      background-size: cover;
+    }
+    30%{
+      background: url(sigiriya04.jpg) no-repeat;
+      background-size: cover;
+    }
+    40%{
+      background: url(sigiriya05.jpg) no-repeat;
+      background-size: cover;
+    }
+    50%{
+      background: url(sigiriya06.jpg) no-repeat;
+      background-size: cover;
+    }
+    60%{
+      background: url(sigiriya07.jpg) no-repeat;
+      background-size: cover;
+    }
+    70%{
+      background: url(sigiriya08.jpg) no-repeat;
+      background-size: cover;
+    }
+    80%{
+      background: url(sigiriya09.jpg) no-repeat;
+      background-size: cover;
+    }
+    90%{
+      background: url(sigiriya10.jpg) no-repeat;
+      background-size: cover;
+    }  
+    100%{
+      background: url(sigiriya00.jpg) no-repeat;
+      background-size: cover;
+    }
+}
+
+/*----------------NAVBAR------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffce14;
+  background: #0f2453;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "roboto";
+  margin: 0 2rem;
+}
+header div i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+header nav {
+  padding: 1rem 2rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+nav li a {
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 250ms ease-in;
+}
+nav li a:hover {
+  background: #ffce14;
+  color: black;
+}
+/*-------------TOP SECTION-------------*/
+.titles {
+  color: white;
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+.titles h1 {
+  font-family: "roboto";
+  font-size: 5rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 0 black;
+  color: #ffce14;
+}
+.titles p {
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0 black;
+}
+/*-------------BOTTOM SECTION-----------*/
+.container-boxes {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  max-width: 80vw;
+}
+.box {
+  background: #ffce14;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  max-height: 180px;
+  min-height: 180px;
+  transition: all 250ms ease-out;
+}
+.box:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: translateY(-20%);
+}
+.box a {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.text h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  color: black;
+}
+.text p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.text {
+  padding: 0.5rem;
+}
+
+/*------MEDIAQUERIES-------*/
+@media (max-width: 1160px) {
+  .icon {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .text h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .text p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  nav li a:hover {
+    background: none;
+    color: black;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    height: 100%;
+  }
+  .container-boxes {
+    flex-direction: column;
+  }
+  .box:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: none;
+  }
+  .titles h1 {
+    font-size: 3rem;
+  }
+}
